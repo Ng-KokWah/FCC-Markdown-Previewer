@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown Previewer</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body onload="load()">
+<div id="app"></div>
+<div id="wholepage">
+  <h1>Markdown Previewer</h1>
+  <textarea id="editor" oninput="update(this.value)">
+# Enter Your Text Here
+    
+## This is a sub heading
+    
+[GitHub](http://github.com)
+    
+`<addr>`
+    
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+``` 
+    
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+    
+> We're living
+    
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+    
+**Bolded Text**
+    </textarea>
+  <p id="preview">And See The Text Appear Here!</p> 
+</div>
+<footer style="color:white; font-weight:15px;">&copy; Coded by KW</footer>
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.6.1/marked.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.6.1/marked.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.6.1/marked.min.js.map'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
